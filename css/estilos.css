@@ -1,0 +1,139 @@
+/*distintos sizings hechos en un map para poder llamarlos en el main*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: #113383 !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.imagenFondo {
+  background-image: url(../assets/img/roman-fondo.png);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.titulo {
+  background-color: #f3b229 !important;
+  border: 1px solid !important;
+  margin-bottom: 5px;
+}
+.titulo h1 {
+  color: #113383 !important;
+}
+
+.subtitulo {
+  color: #f3b229 !important;
+}
+
+table {
+  border: #f3b229 !important;
+}
+table tr {
+  color: #f3b229 !important;
+}
+table td {
+  background-color: #113383 !important;
+}
+table th {
+  background-color: #113383 !important;
+}
+
+li {
+  color: #f3b229 !important;
+  padding: 10px;
+}
+
+nav {
+  background-color: #f3b229 !important;
+}
+
+div .colorContenedorAzu {
+  background-color: #113383 !important;
+}
+div .colorContenedorAma {
+  background-color: #f3b229 !important;
+}
+div .colorTextoAzu {
+  color: #113383 !important;
+}
+div .colorTextoAma {
+  color: #f3b229 !important;
+}
+div .posicionCentrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div .imgAjuste {
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+}
+div .colorTexto--fotoIndex {
+  color: #f3b229 !important;
+  font-size: 30px;
+}
+
+footer {
+  background-color: #f3b229 !important;
+  font-size: 24px;
+}
+
+p {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  div .imgAjuste {
+    height: 150px;
+    width: 150px;
+  }
+
+  div.imgPosicion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagenFondo {
+    background-image: url(../assets/img/fondo-cel.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .videoContenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .videos {
+    height: auto;
+    width: 85%;
+  }
+
+  .imagenes {
+    height: auto;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  table td {
+    font-size: 10px;
+  }
+  table th {
+    font-size: 8px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

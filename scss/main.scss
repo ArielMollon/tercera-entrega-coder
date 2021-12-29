@@ -1,0 +1,132 @@
+@import "components/colores";
+@import "components/maps";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: $colorAzu;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.imagenFondo{
+    background-image: url(../assets/img/roman-fondo.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    max-width: 100%;
+    height: auto;
+}
+.titulo{
+    background-color: $colorAma;
+    border: 1px solid !important;
+    margin-bottom: 5px;
+    h1{
+        color: $colorAzu;
+    }
+}
+
+.subtitulo{
+    color: $colorAma;
+}
+table{
+    border: $colorAma;
+    tr{
+        color: $colorAma;
+    }
+    td{
+        background-color: $colorAzu;
+    }
+    th{
+        background-color: $colorAzu;
+    }
+}
+li{
+    color: $colorAma;
+    padding: 10px;
+}
+nav{ 
+    background-color: $colorAma;
+}
+div{
+    .colorContenedorAzu{
+        background-color: $colorAzu;
+    }
+    .colorContenedorAma{
+        background-color: $colorAma;
+    }
+    .colorTextoAzu{
+        color: $colorAzu;
+    }
+    .colorTextoAma{
+        color: $colorAma;
+    }
+    .posicionCentrado{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgAjuste{
+        height: map-get($map: $sizing, $key: heightLarge);
+        width: map-get($map: $sizing, $key: widthLarge);
+        border-radius: map-get($map: $sizing, $key:heightShort );
+    }
+    .colorTexto--fotoIndex{
+        color: $colorAma;
+        font-size: map-get($map: $sizing, $key: fontMedium);
+    }
+}
+
+footer{
+    background-color: $colorAma;
+    font-size: map-get($map: $sizing, $key: fontShort);
+}
+p{
+    font-size: 40px;
+}
+@media screen and (max-width: 1200px){
+    div .imgAjuste{
+        height: map-get($map: $sizing, $key: heightShort);
+        width: map-get($map: $sizing, $key: widthShort);
+    }
+    div.imgPosicion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagenFondo {
+        background-image: url(../assets/img/fondo-cel.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 100%;
+        height: auto;
+    }
+    .videoContenedor{
+        display: flex;
+        flex-direction: column
+    }
+    .videos{
+        height: auto;
+        width: 85%;
+    }
+    .imagenes{
+        height: auto;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    table{
+        td{
+            font-size: 10px;
+        }
+        th{
+            font-size: 8px;
+        }
+    }
+}
+
+
